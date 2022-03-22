@@ -23,10 +23,10 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md  navbar-dark bg-dark shadow-sm">
+        <nav class="navbar navbar-expand-md  navbar-light bg-light shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Fintech
+                <a class="navbar-brand" href="{{ route('home') }}">
+                    Fintech School
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

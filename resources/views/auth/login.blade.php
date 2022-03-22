@@ -68,7 +68,7 @@ $page = 'Login';
 
                                     @if (Route::has('password.request'))
                                         <a class="btn btn-link" href="{{ route('password.request') }}"
-                                            style="color: black">
+                                            style="color: black;text-decoration:none;">
                                             {{ __('Forgot Your Password?') }}
                                         </a>
                                     @endif

@@ -112,7 +112,7 @@ $page = 'Data User';
                     </div>
 
                     <div class="card-body">
-                        <table class="table table-bordered border-dark">
+                        <table class="table table-bordered">
                             <thead>
                                 <tr>
                                     <th>No.</th>
@@ -197,7 +197,7 @@ $page = 'Data User';
                                                                 <button type="button" class="btn btn-secondary"
                                                                     data-bs-dismiss="modal">Close</button>
                                                                 <button type="submit"
-                                                                    class="btn btn-warning">Update</button>
+                                                                    class="btn btn-primary">Update</button>
                                                             </div>
                                                         </form>
                                                     </div>

@@ -44,16 +44,16 @@ $page = 'Menu';
                                                         <input type="text" class="form-control" name="name">
                                                     </div>
                                                     <div class="form-group">
-                                                        <label>Description</label>
-                                                        <input type="text" class="form-control" name="desc">
-                                                    </div>
-                                                    <div class="form-group">
                                                         <label>Price</label>
                                                         <input type="number" class="form-control" name="price">
                                                     </div>
                                                     <div class="form-group">
                                                         <label>Stock</label>
                                                         <input type="number" class="form-control" name="stock">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Description</label>
+                                                        <input type="text" class="form-control" name="desc">
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">
@@ -87,8 +87,8 @@ $page = 'Menu';
                                         <td>{{ $key + 1 }}</td>
                                         <td>{{ $barang->name }}</td>
                                         <td>{{ $barang->desc }}</td>
-                                        <td>{{ $barang->price }}</td>
                                         <td>{{ $barang->stock }}</td>
+                                        <td>{{ $barang->price }}</td>
                                         <td>
                                             <!-- Button trigger modal -->
                                             <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal"
@@ -118,11 +118,6 @@ $page = 'Menu';
                                                                         value="{{ $barang->name }}">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <label>Description</label>
-                                                                    <input type="text" class="form-control" name="desc"
-                                                                        value="{{ $barang->desc }}">
-                                                                </div>
-                                                                <div class="form-group">
                                                                     <label>Price</label>
                                                                     <input type="number" class="form-control" name="price"
                                                                         value="{{ $barang->price }}">
@@ -131,6 +126,11 @@ $page = 'Menu';
                                                                     <label>Stock</label>
                                                                     <input type="number" class="form-control" name="stock"
                                                                         value="{{ $barang->stock }}">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label>Description</label>
+                                                                    <input type="text" class="form-control" name="desc"
+                                                                        value="{{ $barang->desc }}">
                                                                 </div>
                                                             </div>
                                                             <div class="modal-footer">

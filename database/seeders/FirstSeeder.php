@@ -49,42 +49,42 @@ class FirstSeeder extends Seeder
             "name" => "Septy",
             "email" => "septy@gmail.com",
             "password" => Hash::make("septy"),
-            "role_id" => $student->id
+            "role_id" => $student->id,
         ]);
 
-        $nasgor = Barang::create([
-            "name" => "Nasi Goreng",
+        $mie_ayam = Barang::create([
+            "name" => "Mie Ayam",
             "price" => 7000,
             "stock" => 10,
-            "desc" => "Nasi goreng + telur"
+            "desc" => "Mie dengan toping ayam kecap"
         ]);
 
-        $basreng = Barang::create([
-            "name" => "Basreng",
+        $bakso = Barang::create([
+            "name" => "Bakso",
             "price" => 2000,
             "stock" => 15,
-            "desc" => "Bakso goreng"
+            "desc" => "Bakso kuah"
         ]);
 
         $burger = Barang::create([
             "name" => "Burger",
             "price" => 6000,
             "stock" => 13,
-            "desc" => "Roti + daging + sayur"
+            "desc" => "Roti dan daging"
         ]);
 
-        $oasis = Barang::create([
-            "name" => "Oasis",
+        $aqua = Barang::create([
+            "name" => "Aqua",
             "price" => 2000,
             "stock" => 10,
             "desc" => "Air mineral"
         ]);
 
-        $pucuk = Barang::create([
-            "name" => "Teh Pucuk",
+        $teh_kotak = Barang::create([
+            "name" => "Teh Kotak",
             "price" => 3500,
             "stock" => 10,
-            "desc" => "Minuman teh"
+            "desc" => "Teh berbentuk kotak"
         ]);
 
         Saldo::create([
@@ -101,24 +101,5 @@ class FirstSeeder extends Seeder
             "type" => 1,
             "status" => 3
         ]);
-
-        //Belanja
-        // Transaksi::create([
-        //     "user_id" => $wahyu->id,
-        //     "barang_id" => $burger->id,
-        //     "jumlah" => 2,
-        //     "invoice_id" => "INV_001",
-        //     "type" => 2,
-        //     "status" => 1
-        // ]);
-
-        // Transaksi::create([
-        //     "user_id" => $wahyu->id,
-        //     "barang_id" => $oasis->id,
-        //     "jumlah" => 2,
-        //     "invoice_id" => "INV_001",
-        //     "type" => 2,
-        //     "status" => 1
-        // ]);
     }
 }

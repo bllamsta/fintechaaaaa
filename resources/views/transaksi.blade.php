@@ -14,8 +14,8 @@ $page = 'Jajan';
         <div class="row mb-3">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-body bg-secodary">
-                        <h5>Saldo: {{ $saldo->saldo }}</h5>
+                    <div class="card-body bg-success">
+                        <h5 style="color: white">Saldo : {{ $saldo->saldo }}</h5>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@ $page = 'Jajan';
                                 <div class="col col-md-3 mt-4">
                                     <div class="card">
                                         <div class="card-body">
-                                            <div class="card-title">{{ $barang->name }}</div>
+                                            <div class="card-title"><b>{{ $barang->name }}</b></div>
                                             <div>
                                                 {{ $barang->desc }}
                                                 <p>
@@ -41,9 +41,11 @@ $page = 'Jajan';
                                         <form class="m-2" method="POST"
                                             action="{{ route('addToCart', ['id' => $barang->id]) }}">
                                             @csrf
-                                            <input type="number" name="jumlah" class="form-control" value="1">
+                                            <input type="number" name="jumlah" class="form-control" value="0">
                                             <input type="hidden" name="barang_id" value="{{ $barang->id }}">
+                                            <div class="col d-flex justify-content-end">
                                             <button class="btn btn-primary mt-2" type="submit">Add on Cart</button>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
